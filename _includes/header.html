@@ -1,0 +1,29 @@
+{% assign current = page.title | downcase %}
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header  portfolio-header">
+        <div class="mdl-layout__header-row portfolio-logo-row">
+            <span class="mdl-layout__title">
+                <div class="portfolio-logo"></div>
+                <span class="mdl-layout__title">For Brisbane Personal Electric Vehicle Riders</span>
+            </span>
+        </div>
+        <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a {% if current=="index" %}class="mdl-navigation__link is-active" {% else %} {% if current==null %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %}{% endif %} href="/">Home</a>
+                <a {% if current=="legal" %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %} href="legal">Legal</a>
+                <a {% if current=="gear" %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %} href="gear">Gear</a>
+                <a {% if current=="rides" %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %} href="rides.html">Rides</a>
+                <a {% if current=="suppliers" %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %} href="suppliers.html">Suppliers</a>
+                <a {% if current=="contact" %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %} href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <a class="mdl-navigation__link is-active" href="index.html">Home</a>
+            <a {% if current==null %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %} href="legalities.html">Legal Info</a>
+            <a {% if current==null %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %} href="grouprides.html">Group Rides</a>
+            <a {% if current==null %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %} href="suppliers.html">Suppliers</a>
+            <a {% if current==null %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %} href="contact.html">Contact</a>
+        </nav>
+    </div>
