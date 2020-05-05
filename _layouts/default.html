@@ -4,11 +4,15 @@
     {% include script_header.html %}
   </head>
   <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
     {% include header.html %}
+
         {{ content }}
     {% include footer.html %}
     </main>
     </div>
+  </div>
     {% include script_inline.html %}
   </body>
 </html>

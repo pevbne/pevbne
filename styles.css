@@ -38,8 +38,8 @@
 
 .is-compact .portfolio-logo {
     height: 50px;
-    width: 50px;
-    margin-top: 7px;
+    width: 75px;
+    margin-top: 5px;
 }
 
 .portfolio-navigation-row {
@@ -250,4 +250,8 @@ img.gear {
     bottom: 0;
     padding: 2px;
     left: 0;
+}
+
+.mdl-grid {
+  overflow-wrap: anywhere;
 }

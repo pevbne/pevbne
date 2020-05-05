@@ -1,6 +1,5 @@
 {% assign current = page.title | downcase %}
-<div class="mdl-layout mdl-js-layout ">
-    <header class="mdl-layout__header mdl-layout__header--scroll portfolio-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
         <div class="mdl-layout__header-row portfolio-logo-row">
             <span class="mdl-layout__title">
                 <div class="portfolio-logo"></div>
@@ -19,6 +18,7 @@
         </div>
     </header>
     <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <span class="mdl-layout-title">Title</span>
         <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
             <a {% if current=="index" %}class="mdl-navigation__link is-active" {% else %} {% if current==null %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %}{% endif %} href="/">Home</a>
             <a {% if current=="legal" %}class="mdl-navigation__link is-active" {% else %}class="mdl-navigation__link" {% endif %} href="legal">Legal</a>
