@@ -194,17 +194,16 @@ img.pev {
 
 figcaption {
     background: rgba(0, 0, 0, 0.5);
-    ;
     color: white;
-    max-width: 200px;
-    font-size: 20px;
+    font-size: 1.5em;
     display: block;
     float: center;
     vertical-align: middle;
     position: absolute;
     top: 50%;
     padding: 2px;
-    left: 40%;
+    left: 0%;
+    max-width: 65%;
 }
 
 figure {
@@ -241,17 +240,28 @@ img.gear {
 }
 .geartitle {
     background: rgba(0, 0, 0, 0.5);
-    ;
     color: white;
-    width: 100%;
+    max-width: 100% !important;
+    height:auto !important;
     font-size: 20px;
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     padding: 2px;
-    left: 0;
+    left: 0%;
 }
 
 .mdl-grid {
   overflow-wrap: anywhere;
+  word-wrap: break-word;
+    text-align: justify;
+  text-justify: inter-word;
+}
+
+.mdl-cell--4-col {
+  margin: 0.2em;
+}
+
+.mdl-list__item {
+  padding: 6px !important;
 }
