@@ -220,7 +220,6 @@ figure img {
 
 .grouptitle {
     background: rgba(0, 0, 0, 0.5);
-    ;
     color: white;
     width: 100%;
     font-size: 20px;
@@ -235,7 +234,6 @@ img.gear {
     height: auto;
     width:100%;
     background-color: white;
-    object-fit: cover;
     display: block;
 }
 .geartitle {
@@ -243,12 +241,14 @@ img.gear {
     color: white;
     max-width: 100% !important;
     height:auto !important;
-    font-size: 20px;
+    font-size: 1.5em;
     display: block;
     position: absolute;
-    bottom: 0%;
+    top: 50%;
     padding: 2px;
     left: 0%;
+        vertical-align: middle;
+
 }
 
 .mdl-grid {
